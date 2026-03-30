@@ -1,0 +1,110 @@
+
+============================================================
+VERSION V1  9 features  Accuracy=82.5%  Kappa=0.796
+============================================================
+
+              precision    recall  f1-score   support
+
+        Corn       0.89      0.83      0.86        41
+    Soybeans       0.88      0.81      0.84        52
+     Alfalfa       0.72      0.90      0.80        31
+Winter_Wheat       0.85      0.87      0.86        45
+        Oats       0.76      0.71      0.73        31
+    Dbl_Crop       0.00      0.00      0.00         0
+       Other       0.00      0.00      0.00         0
+
+    accuracy                           0.82       200
+   macro avg       0.58      0.59      0.58       200
+weighted avg       0.83      0.82      0.83       200
+
+Biggest confusion errors (>5% of true class):
+  Corn -> Soybeans: 6 samples (14.6%)
+  Soybeans -> Corn: 4 samples (7.7%)
+  Soybeans -> Oats: 3 samples (5.8%)
+  Alfalfa -> Winter_Wheat: 2 samples (6.5%)
+  Winter_Wheat -> Alfalfa: 3 samples (6.7%)
+  Winter_Wheat -> Oats: 3 samples (6.7%)
+  Oats -> Alfalfa: 5 samples (16.1%)
+  Oats -> Winter_Wheat: 4 samples (12.9%)
+
+
+============================================================
+VERSION V2  16 features  Accuracy=84.7%  Kappa=0.821
+============================================================
+
+              precision    recall  f1-score   support
+
+        Corn       0.91      0.81      0.85        36
+    Soybeans       0.87      0.91      0.89        45
+     Alfalfa       0.84      0.78      0.81        49
+Winter_Wheat       0.83      0.85      0.84        46
+        Oats       0.78      0.89      0.83        36
+    Dbl_Crop       0.00      0.00      0.00         0
+       Other       0.00      0.00      0.00         0
+
+    accuracy                           0.84       212
+   macro avg       0.60      0.60      0.60       212
+weighted avg       0.85      0.84      0.84       212
+
+Biggest confusion errors (>5% of true class):
+  Corn -> Soybeans: 4 samples (11.1%)
+  Corn -> Alfalfa: 3 samples (8.3%)
+  Soybeans -> Corn: 3 samples (6.7%)
+  Alfalfa -> Winter_Wheat: 6 samples (12.2%)
+  Alfalfa -> Oats: 5 samples (10.2%)
+  Winter_Wheat -> Alfalfa: 3 samples (6.5%)
+  Winter_Wheat -> Oats: 4 samples (8.7%)
+  Oats -> Soybeans: 2 samples (5.6%)
+  Oats -> Winter_Wheat: 2 samples (5.6%)
+
+
+============================================================
+VERSION V3  21 features  Accuracy=84.4%  Kappa=0.818
+============================================================
+
+              precision    recall  f1-score   support
+
+        Corn       0.86      0.92      0.89        73
+    Soybeans       0.94      0.91      0.92        86
+     Alfalfa       0.88      0.86      0.87        90
+Winter_Wheat       0.86      0.89      0.88       108
+        Oats       0.82      0.78      0.80        63
+    Dbl_Crop       0.00      0.00      0.00         0
+       Other       0.00      0.00      0.00         0
+
+    accuracy                           0.87       420
+   macro avg       0.62      0.62      0.62       420
+weighted avg       0.87      0.87      0.87       420
+
+Biggest confusion errors (>5% of true class):
+  Soybeans -> Corn: 6 samples (7.0%)
+  Alfalfa -> Winter_Wheat: 7 samples (7.8%)
+  Winter_Wheat -> Alfalfa: 6 samples (5.6%)
+  Oats -> Winter_Wheat: 8 samples (12.7%)
+
+
+============================================================
+VERSION V4  42 features  Accuracy=87.2%  Kappa=0.838
+============================================================
+
+              precision    recall  f1-score   support
+
+        Corn       0.89      0.89      0.89        79
+    Soybeans       0.91      0.89      0.90        72
+     Alfalfa       0.88      0.88      0.88        83
+Winter_Wheat       0.84      0.90      0.87       113
+        Oats       0.85      0.78      0.82        74
+    Dbl_Crop       0.00      0.00      0.00         0
+       Other       0.00      0.00      0.00         0
+
+    accuracy                           0.87       421
+   macro avg       0.63      0.62      0.62       421
+weighted avg       0.87      0.87      0.87       421
+
+Biggest confusion errors (>5% of true class):
+  Corn -> Soybeans: 5 samples (6.3%)
+  Soybeans -> Corn: 6 samples (8.3%)
+  Alfalfa -> Winter_Wheat: 7 samples (8.4%)
+  Oats -> Alfalfa: 5 samples (6.8%)
+  Oats -> Winter_Wheat: 11 samples (14.9%)
+

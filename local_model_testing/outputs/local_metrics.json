@@ -1,0 +1,228 @@
+{
+  "RF_200": {
+    "accuracy": 0.8965287049399199,
+    "kappa": 0.8242477411228797,
+    "f1_weighted": 0.8915331957745796,
+    "f1_macro": 0.830879658718965,
+    "n_train": 6001,
+    "n_test": 1498,
+    "n_features": 42
+  },
+  "RF_500": {
+    "accuracy": 0.8965287049399199,
+    "kappa": 0.8242444152431012,
+    "f1_weighted": 0.8912954790865089,
+    "f1_macro": 0.8299451496176176,
+    "n_train": 6001,
+    "n_test": 1498,
+    "n_features": 42,
+    "report": {
+      "Other": {
+        "precision": 0.8421578421578422,
+        "recall": 0.9546998867497168,
+        "f1-score": 0.8949044585987261,
+        "support": 883.0
+      },
+      "Corn": {
+        "precision": 0.9041095890410958,
+        "recall": 0.8354430379746836,
+        "f1-score": 0.868421052631579,
+        "support": 79.0
+      },
+      "Soybeans": {
+        "precision": 0.9024390243902439,
+        "recall": 0.8222222222222222,
+        "f1-score": 0.8604651162790697,
+        "support": 90.0
+      },
+      "Winter_Wheat": {
+        "precision": 0.775,
+        "recall": 0.6391752577319587,
+        "f1-score": 0.7005649717514124,
+        "support": 97.0
+      },
+      "Dbl_Crop": {
+        "precision": 0.905940594059406,
+        "recall": 0.9289340101522843,
+        "f1-score": 0.9172932330827067,
+        "support": 197.0
+      },
+      "Oats": {
+        "precision": 0.919831223628692,
+        "recall": 0.8044280442804428,
+        "f1-score": 0.8582677165354331,
+        "support": 271.0
+      },
+      "Alfalfa": {
+        "precision": 0.875,
+        "recall": 0.7046979865771812,
+        "f1-score": 0.7806691449814126,
+        "support": 298.0
+      },
+      "accuracy": 0.8647519582245431,
+      "macro avg": {
+        "precision": 0.87492546761104,
+        "recall": 0.8128000636697842,
+        "f1-score": 0.8400836705514771,
+        "support": 1915.0
+      },
+      "weighted avg": {
+        "precision": 0.8668089310641366,
+        "recall": 0.8647519582245431,
+        "f1-score": 0.8616915332263341,
+        "support": 1915.0
+      }
+    }
+  },
+  "GBT": {
+    "accuracy": 0.8985313751668892,
+    "kappa": 0.8290243252274272,
+    "f1_weighted": 0.8946756921109374,
+    "f1_macro": 0.8348036663849999,
+    "n_train": 6001,
+    "n_test": 1498,
+    "n_features": 42
+  },
+  "SVM": {
+    "accuracy": 0.8531375166889186,
+    "kappa": 0.7763084928245092,
+    "f1_weighted": 0.8594388914631914,
+    "f1_macro": 0.7931031695792224,
+    "n_train": 6001,
+    "n_test": 1498,
+    "n_features": 42
+  },
+  "LR": {
+    "accuracy": 0.7977303070761015,
+    "kappa": 0.705183040298679,
+    "f1_weighted": 0.81067678471686,
+    "f1_macro": 0.7390992843755262,
+    "n_train": 6001,
+    "n_test": 1498,
+    "n_features": 42
+  },
+  "MLP_L": {
+    "accuracy": 0.8124165554072096,
+    "kappa": 0.7188744506057778,
+    "f1_weighted": 0.8223388961800832,
+    "f1_macro": 0.73722691198269,
+    "n_train": 6001,
+    "n_test": 1498,
+    "n_features": 42
+  },
+  "XGB": {
+    "accuracy": 0.903,
+    "kappa": 0.837,
+    "f1_weighted": 0.9,
+    "f1_macro": 0.843,
+    "n_train": 6001,
+    "n_test": 1498,
+    "n_features": 42
+  },
+  "MLP_S": {
+    "accuracy": 0.812,
+    "kappa": 0.72,
+    "f1_weighted": 0.823,
+    "f1_macro": 0.742,
+    "n_train": 6001,
+    "n_test": 1498,
+    "n_features": 42
+  },
+  "XGB_base": {
+    "accuracy": 0.9032042723631508,
+    "kappa": 0.8374573270294823,
+    "f1_macro": 0.8433960203929808,
+    "f1_weighted": null,
+    "n_train": 6001,
+    "n_test": 1498,
+    "n_features": 42,
+    "best_params": null
+  },
+  "XGB_weighted": {
+    "accuracy": 0.9065420560747663,
+    "kappa": 0.845594071142171,
+    "f1_macro": 0.852539402286648,
+    "f1_weighted": null,
+    "n_train": 6001,
+    "n_test": 1498,
+    "n_features": 42,
+    "best_params": null,
+    "report": {
+      "Other": {
+        "precision": 0.8907103825136612,
+        "recall": 0.9229898074745186,
+        "f1-score": 0.9065628476084538,
+        "support": 883.0
+      },
+      "Corn": {
+        "precision": 0.8717948717948718,
+        "recall": 0.8607594936708861,
+        "f1-score": 0.8662420382165605,
+        "support": 79.0
+      },
+      "Soybeans": {
+        "precision": 0.8723404255319149,
+        "recall": 0.9111111111111111,
+        "f1-score": 0.8913043478260869,
+        "support": 90.0
+      },
+      "Winter_Wheat": {
+        "precision": 0.8571428571428571,
+        "recall": 0.7422680412371134,
+        "f1-score": 0.7955801104972375,
+        "support": 97.0
+      },
+      "Dbl_Crop": {
+        "precision": 0.9154228855721394,
+        "recall": 0.934010152284264,
+        "f1-score": 0.9246231155778895,
+        "support": 197.0
+      },
+      "Oats": {
+        "precision": 0.8872180451127819,
+        "recall": 0.8708487084870848,
+        "f1-score": 0.8789571694599627,
+        "support": 271.0
+      },
+      "Alfalfa": {
+        "precision": 0.8447653429602888,
+        "recall": 0.785234899328859,
+        "f1-score": 0.8139130434782609,
+        "support": 298.0
+      },
+      "accuracy": 0.8830287206266318,
+      "macro avg": {
+        "precision": 0.8770564015183593,
+        "recall": 0.8610317447991196,
+        "f1-score": 0.8681689532377787,
+        "support": 1915.0
+      },
+      "weighted avg": {
+        "precision": 0.8822647670796493,
+        "recall": 0.8830287206266318,
+        "f1-score": 0.8820945227827512,
+        "support": 1915.0
+      }
+    }
+  },
+  "XGB_tuned": {
+    "accuracy": 0.904539385847797,
+    "kappa": 0.8435382298333083,
+    "f1_macro": 0.8481626891280433,
+    "f1_weighted": 0.9027940222214685,
+    "n_train": 6001,
+    "n_test": 1498,
+    "n_features": 42,
+    "best_params": {
+      "n_estimators": 476,
+      "max_depth": 8,
+      "learning_rate": 0.07352145071383649,
+      "subsample": 0.8985266636071612,
+      "colsample_bytree": 0.7005963757435895,
+      "min_child_weight": 6,
+      "gamma": 0.012196275376632586,
+      "reg_alpha": 0.338622770645381,
+      "reg_lambda": 0.16730120695046918
+    }
+  }
+}

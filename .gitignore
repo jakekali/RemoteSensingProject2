@@ -13,14 +13,6 @@ venv/
 
 # Project-specific
 local_model_testing/auth_keys/
-outputs/
-local_model_testing/outputs/
-local_model_testing/data/
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
 
 # OS files
 .DS_Store

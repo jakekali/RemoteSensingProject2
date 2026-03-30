@@ -1,0 +1,52 @@
+PHASE 4 — GENERALIZATION ANALYSIS
+Model trained on Iowa + Illinois (2023 CDL)
+Applied to 2024 Landsat over new counties
+======================================================================
+
+Version  Phase3 (train)    mclean                renville              
+----------------------------------------------------------------------
+V1       Acc=82.5% K=0.796  Acc=0.0% K=0.000       Acc=0.0% K=0.000       
+V2       Acc=84.7% K=0.821  Acc=0.0% K=0.000       Acc=0.0% K=0.000       
+V3       Acc=84.4% K=0.818  Acc=0.0% K=0.000       Acc=0.0% K=0.000       
+V4       Acc=87.2% K=0.838  Acc=0.0% K=0.000       Acc=0.0% K=0.000       
+V5       Acc=80.1% K=0.768  Acc=56.4% K=0.490       N/A                   
+
+
+======================================================================
+COUNTY: mclean  ()
+======================================================================
+
+Generalization gap (Phase3 accuracy - Phase4 accuracy):
+  V1  Phase3=82.5%  Phase4=0.0%  gap=+82.5%
+  V2  Phase3=84.7%  Phase4=0.0%  gap=+84.7%
+  V3  Phase3=84.4%  Phase4=0.0%  gap=+84.4%
+  V4  Phase3=87.2%  Phase4=0.0%  gap=+87.2%
+  V5  Phase3=80.1%  Phase4=56.4%  gap=+23.8%
+
+======================================================================
+COUNTY: renville  ()
+======================================================================
+
+Generalization gap (Phase3 accuracy - Phase4 accuracy):
+  V1  Phase3=82.5%  Phase4=0.0%  gap=+82.5%
+  V2  Phase3=84.7%  Phase4=0.0%  gap=+84.7%
+  V3  Phase3=84.4%  Phase4=0.0%  gap=+84.4%
+  V4  Phase3=87.2%  Phase4=0.0%  gap=+87.2%
+
+Per-class report (best version: V1):
+              precision    recall  f1-score   support
+
+        Corn       0.00      0.00      0.00       0.0
+    Soybeans       0.00      0.00      0.00       0.0
+     Alfalfa       0.00      0.00      0.00       0.0
+Winter_Wheat       0.00      0.00      0.00       0.0
+        Oats       0.00      0.00      0.00       0.0
+    Dbl_Crop       0.00      0.00      0.00       0.0
+       Other       0.00      0.00      0.00       0.0
+
+    accuracy                           0.00       0.0
+   macro avg       0.00      0.00      0.00       0.0
+weighted avg       0.00      0.00      0.00       0.0
+
+Biggest confusion errors (>5% of true class):
+  None above 5%

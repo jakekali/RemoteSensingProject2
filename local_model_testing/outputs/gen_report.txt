@@ -1,0 +1,47 @@
+GENERALIZATION REPORT
+Model trained on: Iowa + Illinois, 2023 CDL + 2023 Landsat
+Tested on: 2024 Landsat + 2024 CDL
+======================================================================
+
+Model              Train (2023)          Mclean                Renville            
+----------------------------------------------------------------------
+XGB_base           Acc=90.3% K=0.837    Acc=45.9% K=0.382 gap=+44.4%    Acc=69.7% K=0.639 gap=+20.6%  
+XGB_weighted       Acc=90.7% K=0.846    Acc=49.2% K=0.419 gap=+41.4%    Acc=68.0% K=0.619 gap=+22.7%  
+XGB_tuned          Acc=90.5% K=0.844    Acc=46.2% K=0.387 gap=+44.3%    Acc=72.4% K=0.668 gap=+18.1%  
+RF_200             Acc=89.7% K=0.824    Acc=38.8% K=0.321 gap=+50.9%    Acc=47.8% K=0.403 gap=+41.9%  
+GBT                Acc=89.9% K=0.829    Acc=46.0% K=0.358 gap=+43.9%    Acc=62.0% K=0.536 gap=+27.9%  
+
+======================================================================
+McLean County, IL  (in-distribution)
+======================================================================
+
+Best model: XGB_tuned
+              precision    recall  f1-score   support
+
+        Corn       0.87      0.62      0.73       200
+    Soybeans       0.97      0.51      0.66       200
+Winter_Wheat       0.63      0.18      0.28       200
+    Dbl_Crop       0.53      0.64      0.58       200
+        Oats       0.76      0.11      0.19       200
+     Alfalfa       0.46      0.71      0.56       200
+
+   micro avg       0.63      0.46      0.53      1200
+   macro avg       0.70      0.46      0.50      1200
+weighted avg       0.70      0.46      0.50      1200
+
+======================================================================
+Renville County, MN  (out-of-distribution)
+======================================================================
+
+Best model: XGB_tuned
+              precision    recall  f1-score   support
+
+        Corn       1.00      0.41      0.59       200
+    Soybeans       0.68      0.69      0.68       200
+Winter_Wheat       0.91      0.91      0.91       200
+        Oats       0.89      0.88      0.88       200
+     Alfalfa       0.94      0.73      0.83       200
+
+   micro avg       0.86      0.72      0.79      1000
+   macro avg       0.88      0.72      0.78      1000
+weighted avg       0.88      0.72      0.78      1000

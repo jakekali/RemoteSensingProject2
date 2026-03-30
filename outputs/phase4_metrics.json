@@ -1,0 +1,51 @@
+{
+  "mclean": {
+    "v5": {
+      "accuracy": 0.5635753864100321,
+      "kappa": 0.48981772722604433,
+      "n_features": 0
+    },
+    "v1": {
+      "accuracy": 0,
+      "kappa": 0,
+      "n_features": 9
+    },
+    "v2": {
+      "accuracy": 0,
+      "kappa": 0,
+      "n_features": 16
+    },
+    "v3": {
+      "accuracy": 0,
+      "kappa": 0,
+      "n_features": 21
+    },
+    "v4": {
+      "accuracy": 0,
+      "kappa": 0,
+      "n_features": 42
+    }
+  },
+  "renville": {
+    "v1": {
+      "accuracy": 0,
+      "kappa": 0,
+      "n_features": 9
+    },
+    "v2": {
+      "accuracy": 0,
+      "kappa": 0,
+      "n_features": 16
+    },
+    "v3": {
+      "accuracy": 0,
+      "kappa": 0,
+      "n_features": 21
+    },
+    "v4": {
+      "accuracy": 0,
+      "kappa": 0,
+      "n_features": 42
+    }
+  }
+}
