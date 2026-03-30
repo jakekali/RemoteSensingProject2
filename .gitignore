@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# IDEs
+.claude/
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Project-specific
+local_model_testing/auth_keys/
+outputs/
+local_model_testing/outputs/
+local_model_testing/data/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# OS files
+.DS_Store
+Thumbs.db
