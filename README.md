@@ -90,8 +90,9 @@ venv\Scripts\pip install earthengine-api pandas numpy matplotlib seaborn \
 venv\Scripts\python -c "import ee; ee.Authenticate()"
 ```
 
-GEE project: `theta-grid-99720`
-Service account key: `local_model_testing/auth_keys/theta-grid-99720-ea12c2bea3c1.json`
+GEE authentication supports two methods (see `local_model_testing/auth.py`):
+1. Service account JSON key — set `GOOGLE_APPLICATION_CREDENTIALS` env var to your key path
+2. OAuth fallback — runs `ee.Authenticate()` and uses `~/.config/earthengine/credentials`
 
 ---
 
