@@ -19,8 +19,8 @@ OUT_DIR  = os.path.join(os.path.dirname(__file__), 'outputs')
 CLASS_MAP = {0:'Other', 1:'Corn', 5:'Soybeans', 24:'Winter_Wheat',
              26:'Dbl_Crop', 28:'Oats', 36:'Alfalfa'}
 
-print("Loading training data...")
-df = pd.read_csv(os.path.join(DATA_DIR, 'raw_full_boosted.csv'))
+print("Loading training data (2023-only, pre-boost)...")
+df = pd.read_csv(os.path.join(DATA_DIR, 'raw_full.csv'))
 meta = ['cdl_code','crop_name','dataset','region','label_year',
         'image_year','split','longitude','latitude','cdl_group']
 feat_cols = [c for c in df.columns if c not in meta]
